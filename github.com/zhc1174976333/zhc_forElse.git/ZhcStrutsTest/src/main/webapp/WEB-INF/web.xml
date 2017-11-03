@@ -25,6 +25,26 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	<servlet>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<display-name>UploadHandleServlet</display-name>
+		<description></description>
+		<servlet-class>com.zhc.action.UploadHandleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadHandleServlet</servlet-name>
+		<url-pattern>/UploadHandleServlet</url-pattern>
+	</servlet-mapping>
 
+<!-- 注册上传下载的servlet -->
+<!-- <servlet> -->
+<!--     <servlet-name>UploadHandleServlet</servlet-name> -->
+<!--     <servlet-class>me.gacl.web.controller.UploadHandleServlet</servlet-class> -->
+<!-- </servlet> -->
+
+<!-- <servlet-mapping> -->
+<!--     <servlet-name>UploadHandleServlet</servlet-name> -->
+<!--     <url-pattern>/servlet/UploadHandleServlet</url-pattern> -->
+<!-- </servlet-mapping> -->
 
 </web-app>
